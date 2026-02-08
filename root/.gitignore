@@ -1,0 +1,63 @@
+// root/.gitignore
+node_modules/
+dist/
+.env
+*.log
+*.sqlite
+.DS_Store
+/.next
+/public/static
+/.vercel
+/.idea
+/.vscode
+coverage/
+build/
+*.tgz
+*.zip
+
+// root/package.json
+{
+  "name": "my-web-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "prisma": "^3.0.0",
+    "pg": "^8.0.0",
+    "redis": "^3.0.0",
+    "openai": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.0.0",
+    "eslint-config-next": "latest"
+  }
+}
+
+// root/README.md
+# My Web App
+
+This is a web application built with Next.js, Node.js, PostgreSQL, Prisma, Redis, and OpenAI SDK.
+
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Set up your environment variables in a `.env` file
+4. Run the development server: `npm run dev`
+
+## Folder Structure
+
+- `backend/` - Contains backend logic and API routes
+- `frontend/` - Contains frontend components and pages
+
+## License
+
+This project is licensed under the MIT License.
